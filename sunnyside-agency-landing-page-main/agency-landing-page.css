@@ -1,0 +1,440 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+}
+/* Header section */
+header {
+  background-image: url("./images/desktop/image-header.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  padding: 20px 20px;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 35px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+header nav .contact-btn a {
+  background-color: white;
+  padding: 8px 15px;
+  border-radius: 15px;
+  color: black;
+  text-transform: uppercase;
+  display: inline-block;
+  font-weight: 600;
+}
+header nav ul .contact-btn a:hover {
+  background: rgba(255, 255, 255, 0.3);
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 15px;
+  color: white;
+}
+
+.arrow-image {
+  padding-top: 100px;
+  text-align: center;
+  justify-content: center;
+}
+.arrow-image h1 {
+  font-weight: 700;
+  font-size: 35px;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  font-family: "Fraunces";
+  line-height: 10px;
+  color: white;
+}
+
+.arrow-image img {
+  padding-top: 95px;
+}
+
+/* Grid Card Section */
+
+.section-1 {
+  /* main container */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+/* first div */
+.section-1 .section-1-div-1 {
+  padding: 100px 110px;
+}
+
+.section-1 .section-1-div-1 h1 {
+  width: 100%;
+  font-size: 40px;
+  font-weight: bolder;
+  font-family: "Fraunces";
+  line-height: 50px;
+}
+.section-1 .section-1-div-1 p {
+  line-height: 25px;
+  padding-bottom: 45px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Barlow";
+  padding-top: 25px;
+  color: hsl(232, 10%, 55%);
+}
+.section-1 .section-1-div-1 a {
+  border-radius: 3.5px;
+  border-bottom: 4.5px solid hsl(51, 100%, 49%);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Fraunces";
+  color: black;
+}
+.section-1 .section-1-div-2 {
+  background-image: url("./images/desktop/image-transform.jpg");
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+}
+.section-1 .section-1-div-3 {
+  background-image: url("./images/desktop/image-stand-out.jpg");
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+}
+.section-1 .section-1-div-4 {
+  padding: 110px 100px;
+}
+.section-1 .section-1-div-4 h1 {
+  width: 100%;
+  font-size: 40px;
+  font-weight: bolder;
+  font-family: "Fraunces";
+  line-height: 50px;
+}
+.section-1 .section-1-div-4 p {
+  line-height: 25px;
+  padding-bottom: 45px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Barlow";
+  padding-top: 25px;
+  color: hsl(232, 10%, 55%);
+}
+.section-1 .section-1-div-4 a {
+  border-radius: 3.5px;
+  border-bottom: 4.5px solid hsl(7, 99%, 70%);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Fraunces";
+  color: black;
+}
+.section-1 .section-1-div-5 {
+  background-image: url("./images/desktop/image-graphic-design.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 350px 0 0 200px;
+}
+.section-1 .section-1-div-5 h1 {
+  font-family: "Fraunces";
+  text-transform: capitalize;
+  font-weight: 950;
+  color: hsl(212, 27%, 19%);
+}
+.section-1 .section-1-div-5 p {
+  font-family: "Barlow";
+  padding-top: 25px;
+  padding-bottom: 35px;
+  line-height: 25px;
+  padding-right: 100px;
+}
+.section-1 .section-1-div-6 {
+  padding: 350px 15px 0 200px;
+  background-image: url("./images/desktop/image-photography.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.section-1 .section-1-div-6 h1 {
+  font-family: "Fraunces";
+  text-transform: capitalize;
+  font-weight: 950;
+  color: hsl(212, 27%, 19%);
+}
+.section-1 .section-1-div-6 p {
+  font-family: "Barlow";
+  padding-top: 25px;
+  padding-bottom: 50px;
+  line-height: 25px;
+  padding-right: 100px;
+}
+
+/* Client Testimonials */
+.client-container {
+  padding: 100px 80px;
+}
+.client-container h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 25px;
+  font-family: "Fraunces";
+  font-weight: 700;
+  color: hsl(232, 10%, 55%);
+  letter-spacing: 3px;
+  padding-bottom: 100px;
+  line-height: 1px;
+}
+.client-container .client {
+  display: flex;
+  gap: 95px;
+  text-align: center;
+  line-height: 20px;
+  width: 100%;
+}
+.client-container img {
+  border-radius: 100px;
+  width: 50px;
+}
+.client-container .client .p1 {
+  padding-top: 30px;
+  font-family: "Barlow";
+  font-size: 16px;
+  color: hsl(212, 27%, 19%);
+  font-weight: 450;
+  line-height: 30px;
+}
+.client-container .client h4 {
+  padding-top: 50px;
+  padding-bottom: 10px;
+  font-family: "Fraunces";
+}
+.client-container .client .p2 {
+  counter-reset: bold hsl(232, 8%, 63%);
+  font-family: "Barlow";
+  font-weight: 300;
+  line-height: 25px;
+  font-size: 13px;
+  font-weight: 600;
+  font-family: "Barlow";
+  color: hsl(232, 10%, 55%);
+}
+article {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+article .article-1 {
+  background-image: url(./images/mobile/image-gallery-milkbottles.jpg);
+  background-size: cover;
+  height: 70vh;
+  background-position: center;
+}
+article .article-2 {
+  background-image: url(./images/mobile/image-gallery-orange.jpg);
+  background-size: cover;
+  height: 70vh;
+  background-position: center;
+}
+article .article-3 {
+  background-image: url(./images/mobile/image-gallery-cone.jpg);
+  background-size: cover;
+  height: 70vh;
+  background-position: center;
+}
+article .article-4 {
+  background-image: url(./images/mobile/image-gallery-sugar-cubes.jpg);
+  background-size: cover;
+  height: 70vh;
+  background-position: center;
+}
+
+/* Footer */
+footer {
+  background-color: hsl(167, 20%, 56%);
+  text-align: center;
+  padding: 50px 50px;
+}
+footer h1 {
+  color: hsl(198, 62%, 26%);
+  font-family: "Barlow";
+  font-weight: 700;
+  height: 15px;
+}
+footer ul {
+  padding-top: 65px;
+  padding-bottom: 100px;
+  list-style: none;
+  display: flex;
+  gap: 35px;
+  justify-content: center;
+}
+footer ul li a {
+  text-decoration: none;
+  color: hsl(197, 26%, 42%);
+  font-weight: 700;
+}
+footer ul :hover {
+  text-decoration: none;
+  color: hsl(0, 100%, 100%);
+  font-weight: 700;
+}
+footer .icons {
+  color: hsl(197, 26%, 42%);
+}
+footer .icons :hover {
+  cursor: pointer;
+  color: hsl(0, 100%, 100%);
+}
+
+/* Mobile View */
+
+/* Header Section */
+@media (max-width: 768px) {
+  header {
+    background-image: url("./images/mobile/image-header.jpg");
+    height: 80vh;
+    padding: 20px;
+  }
+
+  header nav ul {
+    display: none; /*Its not functioning well so i hide it */
+  }
+
+  .arrow-image {
+    padding-top: 60px;
+  }
+
+  .arrow-image h1 {
+    font-size: 28px;
+    letter-spacing: 6px;
+    line-height: normal;
+    text-align: center;
+  }
+
+  .arrow-image img {
+    padding-top: 60px;
+    width: 30px;
+  }
+
+
+/* The second Section / has cards displayed in grid */
+
+  .section-1 {
+    grid-template-columns: 1fr;
+  }
+
+  /* text blocks */
+  .section-1 .section-1-div-1,
+  .section-1 .section-1-div-4 {
+    padding: 60px 30px;
+    text-align: center;
+  }
+
+  .section-1 .section-1-div-1 h1,
+  .section-1 .section-1-div-4 h1 {
+    font-size: 28px;
+    line-height: 35px;
+  }
+
+  .section-1 .section-1-div-1 p,
+  .section-1 .section-1-div-4 p {
+    font-size: 15px;
+  }
+
+  /* backgroung image sections */
+  .section-1 .section-1-div-2 {
+    background-image: url("./images/mobile/image-transform.jpg");
+    height: 50vh;
+  }
+
+  .section-1 .section-1-div-3 {
+    background-image: url("./images/mobile/image-stand-out.jpg");
+    height: 50vh;
+  }
+
+  .section-1 .section-1-div-5 {
+    background-image: url("./images/mobile/image-graphic-design.jpg");
+    padding: 250px 30px 40px;
+    text-align: center;
+  }
+  .section-1 .section-1-div-5 h1,
+  .section-1 .section-1-div-6 h1 {
+    padding-top: 120px;
+  }
+
+  .section-1 .section-1-div-6 {
+    background-image: url("./images/mobile/image-photography.jpg");
+    padding: 250px 30px 40px;
+    text-align: center;
+  }
+
+  .section-1 .section-1-div-5 p,
+  .section-1 .section-1-div-6 p {
+    padding-right: 0;
+  }
+/* article section */
+article {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+article .article-1 {
+  background-image: url(./images/mobile/image-gallery-milkbottles.jpg);
+  background-size: cover;
+  height: 40vh;
+  background-position: center;
+}
+article .article-2 {
+  background-image: url(./images/mobile/image-gallery-orange.jpg);
+  background-size: cover;
+  height: 40vh;
+  background-position: center;
+}
+article .article-3 {
+  background-image: url(./images/mobile/image-gallery-cone.jpg);
+  background-size: cover;
+  height: 40vh;
+  background-position: center;
+}
+article .article-4 {
+  background-image: url(./images/mobile/image-gallery-sugar-cubes.jpg);
+  background-size: cover;
+  height: 40vh;
+  background-position: center;
+}
+
+
+/* Clinet Testimonials */
+
+  .client-container {
+    padding: 60px 25px;
+  }
+
+  .client-container h1 {
+    font-size: 18px;
+    padding-bottom: 60px;
+    line-height: normal;
+  }
+
+  .client-container .client {
+    flex-direction: column;
+    gap: 60px;
+    align-items: center;
+  }
+
+  .client-container .client div {
+    max-width: 320px;
+  }
+
+  .client-container .client .p1 {
+    font-size: 15px;
+  }
+}
